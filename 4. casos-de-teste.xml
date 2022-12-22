@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10001</projectId>
+    <projectKey>SWAG</projectKey>
+    <exportDate>2022-12-22 01:56:51 UTC</exportDate>
+    <folders>
+        <folder fullPath="Endereço" index="1"/>
+        <folder fullPath="Pagamento" index="0"/>
+    </folders>
+    <testCases>
+        <testCase id="77313480" key="SWAG-T1">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Marcela Silva</createdBy>
+            <createdOn>2022-12-21 03:59:31 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Pagamento]]></folder>
+            <issues>
+                <issue>
+                    <key>SWAG-3</key>
+                    <summary><![CDATA[Como usuário gostaria de escolher o método de pagamento para comprar os produtos.]]></summary>
+                </issue>
+            </issues>
+            <labels>
+                <label><![CDATA[Sprint1]]></label>
+            </labels>
+            <name><![CDATA[Cliente deseja pagar com cartão de crédito]]></name>
+            <objective><![CDATA[Verificar funcionalidade de pagamento mediante cart&atilde;o de cr&eacute;dito.]]></objective>
+            <owner>632f013097148a8301fba658</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio acessa o checkout, que dever&aacute; apresentar o campo de m&eacute;todos de pagamento.&nbsp;]]></description>
+                        <expectedResult><![CDATA[Deve ser exibido o campo de m&eacute;todos de pagamento dispon&iacute;veis.<br /><br />]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio seleciona a op&ccedil;&atilde;o de pagamento atrav&eacute;s de cart&atilde;o de cr&eacute;dito.<br /><br />]]></description>
+                        <expectedResult><![CDATA[Formul&aacute;rio de preenchimento dos dados do cart&atilde;o de cr&eacute;dito deve ser exibido.<br /><br />]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio preenche corretamente todos os dados do formul&aacute;rio de cart&atilde;o de cr&eacute;dito e clica no bot&atilde;o de finalizar.<br /><br />]]></description>
+                        <expectedResult><![CDATA[O usu&aacute;rio &eacute; redirecionado para a tela de compra conclu&iacute;da com sucesso. <br /><br />]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="77314781" key="SWAG-T2">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Marcela Silva</createdBy>
+            <createdOn>2022-12-21 04:17:20 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Pagamento]]></folder>
+            <issues>
+                <issue>
+                    <key>SWAG-3</key>
+                    <summary><![CDATA[Como usuário gostaria de escolher o método de pagamento para comprar os produtos.]]></summary>
+                </issue>
+            </issues>
+            <labels>
+                <label><![CDATA[Sprint1]]></label>
+            </labels>
+            <name><![CDATA[Cliente deseja pagar com boleto bancário]]></name>
+            <owner>632f013097148a8301fba658</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio acessa o checkout, que dever&aacute; apresentar o campo de m&eacute;todos de pagamento.]]></description>
+                        <expectedResult><![CDATA[Deve ser exibido o campo de m&eacute;todos de pagamento dispon&iacute;veis.]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio seleciona a op&ccedil;&atilde;o de pagamento atrav&eacute;s de boleto banc&aacute;rio.]]></description>
+                        <expectedResult><![CDATA[&Eacute; gerado um link para obten&ccedil;&atilde;o do boleto atrav&eacute;s do banco emissor.<br /><br />]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio clica no link do boleto gerado.<br /><br />]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio &eacute; redirecionado para o download do boleto emitido.]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="77315424" key="SWAG-T3">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Marcela Silva</createdBy>
+            <createdOn>2022-12-21 04:46:39 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Endereço]]></folder>
+            <issues>
+                <issue>
+                    <key>SWAG-4</key>
+                    <summary><![CDATA[Como usuário preciso cadastrar meu endereço de entrega para receber os produtos.]]></summary>
+                </issue>
+            </issues>
+            <labels>
+                <label><![CDATA[Sprint1]]></label>
+            </labels>
+            <name><![CDATA[Cliente sem qualquer endereço cadastrado tenta finalizar o processo de compra]]></name>
+            <objective><![CDATA[Verificar se &eacute; poss&iacute;vel que o processo de compra seja finalizado na hip&oacute;tese em que o cliente n&atilde;o informa qualquer endere&ccedil;o de entrega.<br /><br />]]></objective>
+            <owner>632f013097148a8301fba658</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o cliente esteja logado no sistema
+And não possua qualquer endereço de entrega cadastrado 
+When clicar no botão ‘Envio’
+Then será redirecionado para a tela de registro de endereços para cadastro de endereço.]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="77315624" key="SWAG-T4">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Marcela Silva</createdBy>
+            <createdOn>2022-12-21 04:57:16 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Endereço]]></folder>
+            <issues>
+                <issue>
+                    <key>SWAG-4</key>
+                    <summary><![CDATA[Como usuário preciso cadastrar meu endereço de entrega para receber os produtos.]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente com mais de um endereço cadastrado tenta finalizar o processo de compra]]></name>
+            <owner>632f013097148a8301fba658</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o cliente esteja logado no sistema
+And possua dois ou mais endereços de entrega cadastrados
+When clicar no botão ‘Envio’
+Then serão exibidos os dados de todos os endereços cadastrados pelo usuário para que escolha o endereço no qual deverá ser efetuada a entrega.]]></details>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
